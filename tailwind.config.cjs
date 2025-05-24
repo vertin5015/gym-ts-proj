@@ -20,8 +20,10 @@ module.exports = {
         "mobile-home": "url('./assets/HomePageGraphic.png')",
       }),
       fontFamily: {
+        sans: ["Noto Sans SC", "DM Sans", "Montserrat", "sans-serif"],
         dmsans: ["DM Sans", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
+        noto: ["Noto Sans SC", "sans-serif"],
       },
       content: {
         evolvetext: "url('./assets/EvolveText.png')",
