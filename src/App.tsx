@@ -3,6 +3,9 @@ import Navbar from "@/scenes/navbar";
 import Home from "@/scenes/home";
 import { SelectedPage } from "@/shared/types.tsx";
 import Benefits from "@/scenes/benefits";
+import OurClasses from "@/scenes/ourClasses";
+import ContactUs from "./scenes/contactUs";
+import Footer from "./scenes/footer";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(
@@ -16,7 +19,7 @@ function App() {
         setIsTopOfPage(true);
         setSelectedPage(SelectedPage.Home);
       }
-      if (window.screenY !== 0) {
+      if (window.scrollY !== 0) {
         setIsTopOfPage(false);
       }
     };
@@ -33,6 +36,9 @@ function App() {
       />
       <Home setSelectedPage={setSelectedPage} />
       <Benefits setSelectedPage={setSelectedPage} />
+      <OurClasses setSelectedPage={setSelectedPage} />
+      <ContactUs setSelectedPage={setSelectedPage} />
+      <Footer />
     </div>
   );
 }

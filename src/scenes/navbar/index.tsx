@@ -21,7 +21,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
   return (
     <nav>
       <div
-        className={`${navbarBackground} ${flexBetween} fixed top-0 z-30 w-full py-6`}
+        className={`${navbarBackground} ${flexBetween} fixed top-0 z-30 w-full py-6 bg-primary-100`}
       >
         <div className={`${flexBetween} mx-auto w-5/6 `}>
           <div className={`${flexBetween} w-full gap-16 `}>
@@ -30,24 +30,28 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
               <div className={`${flexBetween} w-full`}>
                 <div className={`${flexBetween} gap-8 text-sm`}>
                   <Link
-                    page="主页"
+                    page="home"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
+                    description="主页"
                   />
                   <Link
-                    page="特点"
+                    page="Benefits"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
+                    description="特色"
                   />
                   <Link
-                    page="我们的课程"
+                    page="Our Classes"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
+                    description="我们的课程"
                   />
                   <Link
-                    page="联系我们"
+                    page="Contact Us"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
+                    description="联系我们"
                   />
                 </div>
                 <div className={`${flexBetween} gap-8 `}>
@@ -79,24 +83,28 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
 
           <div className="ml-[33%] flex flex-col gap-10 text-2xl">
             <Link
-              page="主页"
+              page="home"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
+              description="主页"
             />
             <Link
-              page="特点"
+              page="Benefits"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
+              description="特色"
             />
             <Link
-              page="我们的课程"
+              page="Our Classes"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
+              description="我们的课程"
             />
             <Link
-              page="联系我们"
+              page="Contact Us"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
+              description="联系我们"
             />
           </div>
         </div>
