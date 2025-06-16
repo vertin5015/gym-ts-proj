@@ -1,54 +1,44 @@
-# React + TypeScript + Vite
+# 健身房主页项目
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+这是一个使用`React` + `TypeScript` + `Vite`构建的健身房主页。
 
-Currently, two official plugins are available:
+## 技术栈
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React + Typescript + Vite + Tailwind CSS 等
 
-## Expanding the ESLint configuration
+## 主页展示
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+![alt text](./public/images/image.png)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 课程选择
+
+![alt text](./public/images/image-1.png)
+
+## 项目结构
+
+```
+gym-ts-proj/
+ └ src/
+    └ components/      # UI 组成
+    └ hooks/            # 自定义 Hook
+    └ pages/            # 项目页面
+    └ assets/            # 项目资源
+    └ App.tsx
+    └ main.tsx
+ └ public/
+ └ index.html
+ └ vite.config.js
+ └ package.json
+ └ ts.config.json
+ └ tailwind.config.js
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 学习成果
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- 掌握了 `Typescript` 的基本使用
+- 使用 `Tailwind CSS` 加快了项目样式开发
+- 加深了对响应式设计的理解
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 联系
+
+由 @vertin5015 创建 - 欢迎联系！
